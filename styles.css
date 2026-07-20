@@ -305,18 +305,40 @@ button {
 .hero-info {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 10px;
 
   margin-top: 32px;
+}
 
-  color: #8195ac;
-  font-size: 14px;
+.hero-info span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 13px;
+
+  color: #a9bdd3;
+  background: rgba(255, 255, 255, 0.03);
+
+  border: 1px solid var(--border);
+  border-radius: 999px;
+
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .hero-info span::before {
-  content: "//";
-  margin-right: 8px;
-  color: var(--primary);
+  content: "";
+
+  width: 7px;
+  height: 7px;
+
+  flex-shrink: 0;
+
+  background: var(--primary);
+  border-radius: 50%;
+
+  box-shadow: 0 0 8px rgba(56, 200, 255, 0.7);
 }
 
 .hero-image {
