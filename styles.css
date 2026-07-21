@@ -1078,6 +1078,55 @@ button {
   }
 }
 
+/* Ajustes exclusivos da seção de habilidades */
+#habilidades {
+  scroll-margin-top: 100px;
+}
+
+#habilidades .skill-card {
+  min-height: 270px;
+  display: flex;
+  flex-direction: column;
+}
+
+#habilidades .card-number {
+  margin-bottom: 32px;
+}
+
+#habilidades .skill-card .tags {
+  margin-top: auto;
+}
+
+#habilidades .tags span {
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+#habilidades .tags span:hover {
+  color: var(--text);
+  background: rgba(56, 200, 255, 0.08);
+  border-color: rgba(56, 200, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 680px) {
+  #habilidades {
+    scroll-margin-top: 85px;
+  }
+
+  #habilidades .skill-card {
+    min-height: auto;
+  }
+
+  #habilidades .skill-card .tags {
+    margin-top: 0;
+  }
+}
+
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
