@@ -1,541 +1,244 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H7SET2D0VC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio profissional de Kleiton Sobral — suporte técnico, infraestrutura, segurança da informação e desenvolvimento C#.">
+  <meta name="theme-color" content="#050505">
+  <title>Kleiton Sobral | Tecnologia, Segurança e Desenvolvimento</title>
 
-  gtag('config', 'G-H7SET2D0VC');
-</script>
-  <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <meta
-    name="description"
-    content="Portfólio profissional de Kleiton Sobral, desenvolvedor back-end Java e profissional de suporte técnico."
-  >
-
-  <title>Kleiton Sobral | Portfólio</title>
-
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=16">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+  <script src="script.js?v=16" defer></script>
 </head>
-
 <body>
-  <header class="header" id="inicio">
-    <nav class="navbar container">
-      <a href="#inicio" class="logo" aria-label="Página inicial">
-        &lt;KS/&gt;
+  <div id="inicio" class="top-anchor" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <div class="signal-strip" aria-label="Áreas e tecnologias">
+    <div class="signal-track">
+      <div class="signal-group">
+        <span>HELP DESK</span><i>✦</i><span>INFRAESTRUTURA</span><i>✦</i><span>GIT &amp; GITHUB</span><i>✦</i><span>SQL</span><i>✦</i><span>SUPORTE TÉCNICO</span><i>✦</i><span>CYBERSECURITY</span><i>✦</i><span>C#</span><i>✦</i><span>REDES</span><i>✦</i>
+      </div>
+      <div class="signal-group" aria-hidden="true">
+        <span>HELP DESK</span><i>✦</i><span>INFRAESTRUTURA</span><i>✦</i><span>GIT &amp; GITHUB</span><i>✦</i><span>SQL</span><i>✦</i><span>SUPORTE TÉCNICO</span><i>✦</i><span>CYBERSECURITY</span><i>✦</i><span>C#</span><i>✦</i><span>REDES</span><i>✦</i>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#inicio" data-scroll-top aria-label="Kleiton Sobral — voltar ao início">
+        <span class="brand-mark" aria-hidden="true">&lt;KS/&gt;</span>
+        <span class="brand-name">Kleiton Sobral</span>
       </a>
 
-      <button
-        class="menu-button"
-        type="button"
-        aria-label="Abrir menu"
-        aria-expanded="false"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
+      <button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-navigation">
+        <span></span><span></span><span></span>
       </button>
 
-      <div class="nav-links">
-        <a href="#sobre">Sobre</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#experiencia">Experiência</a>
-        <a href="#formacao">Formação</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#certificacoes">Certificações</a>
-        <a href="#contato" class="nav-contact">Contato</a>
-      </div>
-    </nav>
+      <nav class="nav-links" id="primary-navigation" aria-label="Navegação principal">
+        <a href="#sobre"><small>01</small> Sobre</a>
+        <a href="#habilidades"><small>02</small> Competências</a>
+        <a href="#experiencia"><small>03</small> Experiência</a>
+        <a href="#formacao"><small>04</small> Formação</a>
+        <a href="#projetos"><small>05</small> Projetos</a>
+        <a href="#certificacoes"><small>06</small> Cursos</a>
+        <a class="nav-contact" href="#contato">Contato ↗</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <!-- Início -->
-    <section class="hero section">
-      <div class="container hero-content">
-        <div class="hero-text reveal">
-          <p class="section-label">
-            Desenvolvimento de software e tecnologia
-          </p>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-stage shell">
+        <div class="hero-typewall" aria-hidden="true">
+          <div class="mega-line line-c"><b>C# + SQL</b></div>
+          <div class="mega-line line-a"><b>SUPORTE</b></div>
+          <div class="mega-line line-b"><b>SEGURANÇA</b></div>
+        </div>
 
-          <h1>
-            Olá, eu sou
-            <span>Kleiton Sobral.</span>
-          </h1>
-
-          <h2>
-            Suporte Técnico | Segurança da Informação | Desenvolvimento C#
-          </h2>
-
-          <p class="hero-description">
-            Estudante de Análise e Desenvolvimento de Sistemas, com formação
-            técnica em Desenvolvimento de Sistemas e experiência prática em
-            suporte técnico, help desk N1 e N2, infraestrutura e atendimento
-            presencial e remoto aos usuários.
-          </p>
-
-          <p class="hero-description">
-            Atualmente, amplio meus conhecimentos em desenvolvimento com C#,
-            segurança da informação, redes de computadores e banco de dados,
-            buscando oportunidades como desenvolvedor júnior ou na área de
-            segurança da informação.
-          </p>
-
-          <div class="hero-buttons">
-            <a href="#projetos" class="button button-primary">
-              Ver projetos
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/dev-kleiton-sobral/"
-              class="button button-secondary"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
-            </a>
-          </div>
-
-          <div class="hero-info">
-            <span>Espírito Santo, Brasil</span>
-            <span>Suporte Técnico · Help Desk N1/N2</span>
-            <span>Segurança da Informação · C#</span>
+        <div class="hero-profile js-hero-item">
+          <div class="portrait-wrap">
+            <div class="portrait-fallback" aria-hidden="true">KS</div>
+            <img class="profile-photo" src="https://github.com/KLEITONSOBRAL.png?size=1200" data-fallback-src="assets/profile-kleiton.jpg?v=16" alt="Foto de perfil de Kleiton Sobral" width="1200" height="1200" fetchpriority="high" decoding="async">
           </div>
         </div>
 
-        <div class="hero-image reveal">
-          <div class="image-border">
-            <img
-              src="https://github.com/KLEITONSOBRAL.png?size=500"
-              alt="Foto de perfil de Kleiton Sobral"
-            >
+        <div class="hero-copy">
+          <p class="hero-eyebrow js-hero-item"><span class="status-dot"></span> Espírito Santo, Brasil · disponível para oportunidades</p>
+          <h1 id="hero-title" class="js-hero-item">Olá, eu sou<br><span>Kleiton Sobral.</span></h1>
+          <p class="hero-role js-hero-item">Suporte Técnico <i>/</i> Segurança da Informação <i>/</i> Desenvolvimento C#</p>
+          <p class="hero-summary js-hero-item">Estudante de Análise e Desenvolvimento de Sistemas, com formação técnica em Desenvolvimento de Sistemas e experiência prática em suporte técnico, help desk N1 e N2, infraestrutura e atendimento presencial e remoto.</p>
+          <div class="hero-actions js-hero-item">
+            <a class="btn btn-primary" href="#projetos">Explorar projetos <span>↘</span></a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/dev-kleiton-sobral/" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a>
           </div>
+        </div>
 
-          <div class="code-box">
-            <div class="code-dots">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+        <a class="scroll-cue" href="#sobre" aria-label="Ir para Sobre mim"><span>Scroll</span><i>↓</i></a>
+      </div>
+    </section>
 
-            <pre><code><strong>public class</strong> ProfissionalTI {
-              string Nome = "Kleiton Sobral";
-              string Foco = "Segurança da Informação";
-              string Experiencia = "Suporte Técnico";
-              string Stack = "C#";
-              
-            }</code></pre>
-          </div>
+    <section class="ingredients" aria-label="Tecnologias e competências">
+      <div class="shell ingredients-head reveal-once">
+        <p>Trabalho e estudo com estas <strong>tecnologias</strong> →</p>
+      </div>
+      <div class="ingredients-rail" aria-hidden="true">
+        <div class="ingredients-track">
+          <span>C#</span><span>SQL</span><span>Git</span><span>GitHub</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Windows</span><span>Redes</span><span>Cybersecurity</span><span>Help Desk</span><span>Hardware</span>
+          <span>C#</span><span>SQL</span><span>Git</span><span>GitHub</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Windows</span><span>Redes</span><span>Cybersecurity</span><span>Help Desk</span><span>Hardware</span>
         </div>
       </div>
     </section>
 
-    <!-- Sobre -->
-    <section class="section" id="sobre">
-      <div class="container section-columns">
-        <div class="section-title reveal">
-          <p class="section-label">01. Perfil</p>
-          <h2>Sobre mim</h2>
+    <section class="section section-dark" id="sobre">
+      <div class="shell section-head reveal-once">
+        <div><p class="section-code">01 / PERFIL</p><h2>Sobre mim</h2></div>
+        <p class="section-intro">Tecnologia com base prática: suporte, infraestrutura e segurança, evoluindo para desenvolvimento de software.</p>
+      </div>
+
+      <div class="shell about-grid">
+        <div class="about-statement reveal-once">
+          <p>Minha trajetória profissional combina experiência prática em <em>suporte técnico</em>, infraestrutura e segurança da informação, com atendimento presencial e remoto e atuação em help desk N1 e N2.</p>
         </div>
-
-        <div class="about-content reveal">         
-          <p class="about-highlight">
-           Minha trajetória profissional combina experiência prática em suporte
-           técnico, infraestrutura e segurança da informação, com atendimento
-           presencial e remoto a usuários e atuação em help desk N1 e N2.
-          </p>
-
-          <p>
-            Possuo experiência em configuração, instalação e manutenção de
-            computadores, formatação, instalação dos sistemas Windows 10 e
-            Windows 11, atualização de aplicativos, cabeamento e preparação de
-            equipamentos para uso.
-          </p>
-
-          <p>
-            Atualmente, direciono meu desenvolvimento profissional para as áreas
-            de segurança da informação e desenvolvimento de software com C#,
-            buscando oportunidades como profissional de segurança da informação
-            ou desenvolvedor júnior.
-          </p>
-
-          <div class="statistics">
-            <article>
-              <strong>2</strong>
-              <span>Experiências em tecnologia</span>
-            </article>
-
-            <article>
-              <strong>4</strong>
-              <span>Formações acadêmicas</span>
-            </article>
-
-            <article>
-              <strong>50+</strong>
-              <span>Cursos e certificações</span>
-            </article>
-
-            <article>
-              <strong id="repository-count">30+</strong>
-              <span>Repositórios no GitHub</span>
-            </article>
-          </div>
+        <div class="about-detail reveal-once">
+          <p>Possuo experiência em configuração, instalação e manutenção de computadores, formatação, Windows 10 e Windows 11, atualização de aplicativos, cabeamento e preparação de equipamentos para uso.</p>
+          <p>Atualmente, direciono meu desenvolvimento profissional para segurança da informação e desenvolvimento de software com C#, buscando oportunidades como profissional de segurança da informação ou desenvolvedor júnior.</p>
         </div>
+      </div>
+
+      <div class="shell stat-grid reveal-group">
+        <article><strong>02</strong><span>Experiências em tecnologia</span></article>
+        <article><strong>04</strong><span>Formações acadêmicas</span></article>
+        <article><strong id="repository-count">37</strong><span>Repositórios no GitHub</span></article>
+        <article><strong>50+</strong><span>Cursos e certificações</span></article>
       </div>
     </section>
 
-    <!-- Habilidades -->
-    <section class="section section-alternative" id="habilidades">
-      <div class="container">
-        <div class="section-title reveal">
-          <p class="section-label">02. Competências</p>
-          <h2>Habilidades técnicas</h2>
+    <section class="section section-light" id="habilidades">
+      <div class="shell section-head reveal-once">
+        <div><p class="section-code">02 / COMPETÊNCIAS</p><h2>O que eu faço</h2></div>
+        <p class="section-intro">Competências desenvolvidas em experiências profissionais, cursos técnicos, formações e projetos acadêmicos.</p>
+      </div>
 
-          <p>
-            Competências desenvolvidas em experiências profissionais,
-            cursos técnicos, formações e projetos acadêmicos.
-          </p>
-        </div>
-
-        <div class="skills-grid">
-          <article class="card skill-card reveal">
-            <span class="card-number">01</span>
-            <h3>Suporte técnico</h3>
-
-            <div class="tags">
-              <span>Help Desk N1 e N2</span>
-              <span>Atendimento presencial</span>
-              <span>Atendimento remoto</span>
-              <span>Configuração de computadores</span>
-              <span>Formatação</span>
-              <span>Instalação de aplicativos</span>
-              <span>Atualização de sistemas</span>
-            </div>
-          </article>
-
-          <article class="card skill-card reveal">
-            <span class="card-number">02</span>
-            <h3>Infraestrutura e hardware</h3>
-
-            <div class="tags">
-              <span>Manutenção de computadores</span>
-              <span>Diagnóstico de hardware</span>
-              <span>Instalação de computadores</span>
-              <span>Windows 10</span>
-              <span>Windows 11</span>
-              <span>Cabeamento</span>
-              <span>Redes de computadores</span>
-            </div>
-          </article>
-
-          <article class="card skill-card reveal">
-            <span class="card-number">03</span>
-            <h3>Segurança da informação</h3>
-
-            <div class="tags">
-              <span>Fundamentos de cibersegurança</span>
-              <span>Defesa de redes</span>
-              <span>Gestão de ameaças</span>
-              <span>Segurança de redes</span>
-              <span>LGPD</span>
-              <span>NIST</span>
-              <span>Proteção de dados</span>
-            </div>
-          </article>
-
-          <article class="card skill-card reveal">
-            <span class="card-number">04</span>
-            <h3>Desenvolvimento e ferramentas</h3>
-
-            <div class="tags">
-              <span>C# em aprendizado</span>
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>JavaScript</span>
-              <span>MySQL</span>
-              <span>Modelagem de dados</span>
-              <span>Git</span>
-              <span>GitHub</span>
-            </div>
-          </article>
-        </div>
+      <div class="shell skills-list reveal-group">
+        <article class="skill-row">
+          <span class="skill-number">01</span>
+          <div><h3>Suporte técnico</h3><p>Atendimento ao usuário, diagnóstico e resolução de problemas em ambientes presenciais e remotos.</p></div>
+          <div class="skill-tags"><span>Help Desk N1/N2</span><span>Atendimento presencial</span><span>Atendimento remoto</span><span>Formatação</span><span>Aplicativos</span></div>
+        </article>
+        <article class="skill-row">
+          <span class="skill-number">02</span>
+          <div><h3>Infraestrutura &amp; hardware</h3><p>Instalação, manutenção e preparação de equipamentos e ambientes de trabalho.</p></div>
+          <div class="skill-tags"><span>Hardware</span><span>Windows 10/11</span><span>Cabeamento</span><span>Redes</span><span>Diagnóstico</span></div>
+        </article>
+        <article class="skill-row green-row">
+          <span class="skill-number">03</span>
+          <div><h3>Segurança da informação</h3><p>Fundamentos de defesa de redes, ameaças, proteção de dados e boas práticas.</p></div>
+          <div class="skill-tags"><span>Cybersecurity</span><span>Network Defense</span><span>NIST</span><span>LGPD</span><span>Threat Management</span></div>
+        </article>
+        <article class="skill-row">
+          <span class="skill-number">04</span>
+          <div><h3>Desenvolvimento &amp; dados</h3><p>Construindo repertório de software para complementar a experiência de infraestrutura e suporte.</p></div>
+          <div class="skill-tags"><span>C#</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>MySQL</span><span>Git/GitHub</span></div>
+        </article>
       </div>
     </section>
 
-    <!-- Experiência -->
-    <section class="section" id="experiencia">
-      <div class="container section-columns">
-        <div class="section-title reveal">
-          <p class="section-label">03. Trajetória</p>
-          <h2>Experiência profissional</h2>
+    <section class="section section-dark" id="experiencia">
+      <div class="shell experience-layout">
+        <div class="sticky-title reveal-once">
+          <p class="section-code">03 / TRAJETÓRIA</p>
+          <h2>Experiência<br>profissional</h2>
+          <p>Atuação prática em ambientes de tecnologia, com contato direto com usuários, infraestrutura e resolução de demandas.</p>
         </div>
 
-        <div class="timeline">
-          <article class="timeline-item reveal">
-            <div class="timeline-dot"></div>
-
-            <p class="timeline-date">
-              Novembro de 2025 — atualmente
-            </p>
-
+        <div class="timeline reveal-group">
+          <article class="timeline-item">
+            <div class="timeline-top"><span>ATUAL</span><time>Nov. 2025 — atualmente</time></div>
             <h3>Estagiário de Tecnologia</h3>
-
-            <p class="organization">
-              SECULT — Secretaria de Estado da Cultura do Espírito Santo
-            </p>
-
-            <p>
-              Atuação com suporte técnico, atendimento ao usuário,
-              suporte remoto e execução de rotinas relacionadas à
-              tecnologia da informação.
-            </p>
-
-            <div class="tags">
-              <span>Suporte técnico</span>
-              <span>Suporte remoto</span>
-              <span>Atendimento ao usuário</span>
-            </div>
+            <p class="organization">SECULT — Secretaria de Estado da Cultura do Espírito Santo</p>
+            <p>Atuação com suporte técnico, atendimento ao usuário, suporte remoto e execução de rotinas relacionadas à tecnologia da informação.</p>
+            <div class="inline-tags"><span>Suporte técnico</span><span>Suporte remoto</span><span>Atendimento</span></div>
           </article>
-
-          <article class="timeline-item reveal">
-            <div class="timeline-dot"></div>
-
-            <p class="timeline-date">
-              Julho de 2024 — abril de 2025
-            </p>
-
+          <article class="timeline-item">
+            <div class="timeline-top"><span>2024</span><time>Jul. 2024 — abr. 2025</time></div>
             <h3>Estagiário de Tecnologia</h3>
-
-            <p class="organization">
-              PMES — Diretoria de Tecnologia da Informação e Comunicação
-            </p>
-
-            <p>
-              Experiência com suporte técnico, manutenção e diagnóstico
-              de hardware, configuração de equipamentos e atendimento às
-              demandas dos usuários.
-            </p>
-
-            <div class="tags">
-              <span>Hardware</span>
-              <span>Suporte técnico</span>
-              <span>Manutenção</span>
-            </div>
+            <p class="organization">PMES — Diretoria de Tecnologia da Informação e Comunicação</p>
+            <p>Experiência com suporte técnico, manutenção e diagnóstico de hardware, configuração de equipamentos e atendimento às demandas dos usuários.</p>
+            <div class="inline-tags"><span>Hardware</span><span>Suporte técnico</span><span>Manutenção</span></div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Formação -->
-    <section class="section section-alternative" id="formacao">
-      <div class="container">
-        <div class="section-title reveal">
-          <p class="section-label">04. Educação</p>
-          <h2>Formação acadêmica</h2>
-        </div>
+    <section class="section section-green" id="formacao">
+      <div class="shell section-head reveal-once">
+        <div><p class="section-code">04 / EDUCAÇÃO</p><h2>Formação acadêmica</h2></div>
+        <p class="section-intro">Formação multidisciplinar combinando software, infraestrutura, informática e gestão.</p>
+      </div>
 
-        <div class="education-grid">
-          <article class="card education-card reveal">
-            <p class="timeline-date">Setembro de 2024 — março de 2027</p>
-            <h3>Análise e Desenvolvimento de Sistemas</h3>
-            <p class="organization">Estácio</p>
-            <p>Ensino superior</p>
-          </article>
+      <div class="shell education-list reveal-group">
+        <article><span class="edu-year">2024—27</span><div><p>Setembro de 2024 — março de 2027</p><h3>Análise e Desenvolvimento de Sistemas</h3><strong>Estácio</strong></div><span class="edu-kind">Ensino superior</span></article>
+        <article><span class="edu-year">2025—26</span><div><p>Julho de 2025 — dezembro de 2026</p><h3>Técnico em Informática</h3><strong>CEET Vasco Coutinho</strong></div><span class="edu-kind">Ensino técnico</span></article>
+        <article><span class="edu-year">2024—25</span><div><p>Fevereiro de 2024 — julho de 2025</p><h3>Técnico em Desenvolvimento de Sistemas</h3><strong>SENAI</strong></div><span class="edu-kind">Ensino técnico</span></article>
+        <article><span class="edu-year">2014—15</span><div><p>Junho de 2014 — dezembro de 2015</p><h3>Técnico em Administração</h3><strong>EEEM Irmã Maria Horta</strong></div><span class="edu-kind">Ensino técnico</span></article>
+      </div>
+    </section>
 
-          <article class="card education-card reveal">
-            <p class="timeline-date">Julho de 2025 — dezembro de 2026</p>
-            <h3>Técnico em Informática</h3>
-            <p class="organization">CEET Vasco Coutinho</p>
-            <p>Ensino técnico</p>
-          </article>
-
-          <article class="card education-card reveal">
-            <p class="timeline-date">Fevereiro de 2024 — julho de 2025</p>
-            <h3>Técnico em Desenvolvimento de Sistemas</h3>
-            <p class="organization">SENAI</p>
-            <p>Ensino técnico</p>
-          </article>
-
-          <article class="card education-card reveal">
-            <p class="timeline-date">Junho de 2014 — dezembro de 2015</p>
-            <h3>Técnico em Administração</h3>
-            <p class="organization">EEEM Irmã Maria Horta</p>
-            <p>Ensino técnico</p>
-          </article>
+    <section class="section section-dark projects-section" id="projetos">
+      <div class="shell project-head reveal-once">
+        <div><p class="section-code">05 / WORKS</p><h2>Projetos no<br>GitHub</h2></div>
+        <div><p>Uma seleção dos meus repositórios públicos, carregada automaticamente do GitHub.</p><a href="https://github.com/KLEITONSOBRAL?tab=repositories" target="_blank" rel="noopener noreferrer">Ver todos os projetos ↗</a></div>
+      </div>
+      <div class="shell">
+        <div id="projects-message" class="projects-message" role="status" aria-live="polite">Carregando projetos...</div>
+        <div id="projects-grid" class="projects-grid" aria-live="polite">
+          <article class="project-skeleton" aria-hidden="true"></article>
+          <article class="project-skeleton" aria-hidden="true"></article>
+          <article class="project-skeleton" aria-hidden="true"></article>
         </div>
       </div>
     </section>
 
-    <!-- Projetos -->
-    <section class="section" id="projetos">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="section-title">
-            <p class="section-label">05. Código</p>
-            <h2>Projetos no GitHub</h2>
+    <section class="section section-light" id="certificacoes">
+      <div class="shell section-head reveal-once">
+        <div><p class="section-code">06 / APRENDIZADO CONTÍNUO</p><h2>Cursos &amp;<br>certificações</h2></div>
+        <div class="cert-head-copy"><p class="section-intro">Seleção por relevância para segurança da informação, redes, infraestrutura e proteção de dados.</p><a class="dark-link" href="https://www.linkedin.com/in/dev-kleiton-sobral/details/certifications/" target="_blank" rel="noopener noreferrer">Ver todas no LinkedIn ↗</a></div>
+      </div>
 
-            <p>
-              Repositórios públicos carregados automaticamente do meu
-              perfil.
-            </p>
-          </div>
-
-          <a
-            href="https://github.com/KLEITONSOBRAL?tab=repositories"
-            class="external-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Ver todos os projetos ↗
-          </a>
-        </div>
-
-        <div class="projects-grid" id="projects-grid">
-          <article class="card project-card loading-card"></article>
-          <article class="card project-card loading-card"></article>
-          <article class="card project-card loading-card"></article>
-        </div>
-
-        <p class="projects-message" id="projects-message" hidden></p>
+      <div class="shell certificate-list reveal-group">
+        <article><span>01</span><div><small>Cisco · Abril de 2025</small><h3>Network Defense</h3><p>Fundamentos de defesa e proteção de redes de computadores.</p></div></article>
+        <article><span>02</span><div><small>TIexames · Março de 2025</small><h3>Segurança Cibernética: Guias NIST</h3><p>Guias NIST aplicados à infraestrutura crítica e à inteligência artificial.</p></div></article>
+        <article><span>03</span><div><small>Cisco · Julho de 2024</small><h3>Cyber Threat Management</h3><p>Identificação e gerenciamento de ameaças cibernéticas.</p></div></article>
+        <article><span>04</span><div><small>Fundação Bradesco · Julho de 2024</small><h3>Segurança em Tecnologia da Informação</h3><p>Fundamentos de proteção de sistemas, informações e recursos de tecnologia.</p></div></article>
+        <article><span>05</span><div><small>Cisco · Julho de 2024</small><h3>Networking Basics</h3><p>Fundamentos de conectividade e funcionamento de redes de computadores.</p></div></article>
+        <article><span>06</span><div><small>Fundação Bradesco · Julho de 2024</small><h3>Lei Geral de Proteção de Dados — LGPD</h3><p>Princípios da legislação brasileira sobre proteção e tratamento de dados pessoais.</p></div></article>
       </div>
     </section>
 
-    <!-- Certificações -->
-    <section class="section section-alternative" id="certificacoes">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="section-title">
-            <p class="section-label">06. Aprendizado contínuo</p>
-            <h2>Certificações em destaque</h2>
-
-            <p>
-              Certificações selecionadas por relevância para segurança da
-              informação, redes, infraestrutura e proteção de dados.
-            </p>
-          </div>
-
-          <a
-            href="https://www.linkedin.com/in/dev-kleiton-sobral/details/certifications/"
-            class="external-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Ver todas no LinkedIn ↗
-          </a>
-        </div>
-
-        <div class="certifications-grid">
-          <article class="card certification-card reveal">
-            <span>Cisco • Abril de 2025</span>
-            <h3>Network Defense</h3>
-            <p>
-              Certificação voltada aos fundamentos de defesa e proteção
-              de redes de computadores.
-            </p>
-          </article>
-
-          <article class="card certification-card reveal">
-            <span>TIexames • Março de 2025</span>
-            <h3>Segurança Cibernética: Guias NIST</h3>
-            <p>
-              Estudo dos guias NIST aplicados à infraestrutura crítica e
-              à inteligência artificial.
-            </p>
-          </article>
-
-          <article class="card certification-card reveal">
-            <span>Cisco • Julho de 2024</span>
-            <h3>Cyber Threat Management</h3>
-            <p>
-              Conteúdos relacionados à identificação e ao gerenciamento
-              de ameaças cibernéticas.
-            </p>
-          </article>
-
-          <article class="card certification-card reveal">
-            <span>Fundação Bradesco • Julho de 2024</span>
-            <h3>Segurança em Tecnologia da Informação</h3>
-            <p>
-              Fundamentos de proteção de sistemas, informações e recursos
-              de tecnologia.
-            </p>
-          </article>
-
-          <article class="card certification-card reveal">
-            <span>Cisco • Julho de 2024</span>
-            <h3>Networking Basics</h3>
-            <p>
-              Fundamentos de conectividade e funcionamento de redes de
-              computadores.
-            </p>
-          </article>
-
-          <article class="card certification-card reveal">
-            <span>Fundação Bradesco • Julho de 2024</span>
-            <h3>Lei Geral de Proteção de Dados — LGPD</h3>
-            <p>
-              Princípios da legislação brasileira sobre proteção e
-              tratamento de dados pessoais.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contato -->
-    <section class="section contact-section" id="contato">
-      <div class="container">
-        <div class="contact-box reveal">
-          <p class="section-label">07. Contato</p>
-
-          <h2>Vamos conversar sobre tecnologia?</h2>
-
-          <p>
-            Entre em contato pelo LinkedIn ou acompanhe meus projetos e
-            estudos no GitHub.
-          </p>
-
-          <div class="hero-buttons contact-buttons">
-            <a
-              href="https://www.linkedin.com/in/dev-kleiton-sobral/"
-              class="button button-primary"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Falar pelo LinkedIn
-            </a>
-
-            <a
-              href="https://github.com/KLEITONSOBRAL"
-              class="button button-secondary"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Acessar GitHub
-            </a>
-          </div>
+    <section class="contact" id="contato">
+      <div class="contact-backdrop" aria-hidden="true">KLEITON SOBRAL</div>
+      <div class="shell contact-inner reveal-once">
+        <p class="section-code">07 / CONTATO</p>
+        <h2>LET’S TALK.</h2>
+        <p>Entre em contato pelo LinkedIn ou acompanhe meus projetos e estudos no GitHub.</p>
+        <div class="contact-actions">
+          <a href="https://www.linkedin.com/in/dev-kleiton-sobral/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="https://github.com/KLEITONSOBRAL" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-content">
-      <p>
-        © <span id="current-year"></span> Kleiton Sobral.
-      </p>
-
-      <p>
-        Desenvolvido com HTML, CSS e JavaScript.
-      </p>
+    <div class="shell footer-inner">
+      <p>© <span id="current-year">2026</span> Kleiton Sobral.</p>
+      <p>HTML · CSS · JavaScript · GSAP</p>
+      <a href="#inicio" data-scroll-top>Voltar ao topo ↑</a>
     </div>
   </footer>
 </body>
